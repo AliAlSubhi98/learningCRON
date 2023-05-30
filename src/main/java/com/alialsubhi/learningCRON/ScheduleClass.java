@@ -8,11 +8,11 @@ import java.util.Date;
 @Component
 public class ScheduleClass {
 
-    @Scheduled(cron = "0 */5 * * * *")
+    @Scheduled(cron = "0 0 * * * *")
     public void schedule(){
         System.out.println("""
                 Write a CRON expression that:
-                runs a job every five minutes.
+                 that runs a job every hour.
                 """);
     }
 }
