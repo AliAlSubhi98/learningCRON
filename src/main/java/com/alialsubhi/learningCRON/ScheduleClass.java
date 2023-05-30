@@ -8,11 +8,11 @@ import java.util.Date;
 @Component
 public class ScheduleClass {
 
-    @Scheduled(cron = "0 30 14 * * *")
+    @Scheduled(cron = "0 0 8 * * 1")
     public void schedule(){
         System.out.println("""
                 Write a CRON expression that:
-                that runs a job every day at 2:30 PM.
+                that runs a job every Monday at 8:00 AM.
                 """);
     }
 }
