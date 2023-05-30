@@ -9,11 +9,12 @@ import java.util.Date;
 public class ScheduleClass {
 /*Second      Minute        Hour       Day      Month       Day of Week
   0-59        0-59          0-23       1-31     1-12        0-6  {0-> Sunday}*/
-    @Scheduled(cron = "0 30 19,22 * * 0")
+    @Scheduled(cron = "0 */15 8-22 * * *")
     public void schedule(){
         System.out.println("""
                 Write a CRON expression that:
-                 that runs a job every Sunday at 7:30 PM and 10:30 PM
+                 that runs a job every 15 minutes between 8:00 AM and 10:45 PM
+                 every day
                 """);
     }
 }
