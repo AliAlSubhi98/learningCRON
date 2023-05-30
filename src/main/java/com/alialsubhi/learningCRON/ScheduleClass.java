@@ -7,12 +7,13 @@ import java.util.Date;
 
 @Component
 public class ScheduleClass {
-
-    @Scheduled(cron = "0 0 3 1 * *")
+/*Second      Minute        Hour       Day      Month       Day of Week
+  0-59        0-59          0-23       1-31     1-12        0-6  {0-> Sunday}*/
+    @Scheduled(cron = "0 30 19,22 * * 0")
     public void schedule(){
         System.out.println("""
                 Write a CRON expression that:
-                n that runs a job every month on the first day of the month at 3:00 AM.
+                 that runs a job every Sunday at 7:30 PM and 10:30 PM
                 """);
     }
 }
