@@ -9,7 +9,7 @@ import java.util.Date;
 public class ScheduleClass {
 /*Second      Minute        Hour       Day      Month       Day of Week
   0-59        0-59          0-23       1-31     1-12        0-6  {0-> Sunday}*/
-    @Scheduled(cron = "0 * 12 1-6 1 1")
+    @Scheduled(cron = "0 */5 * 1-10 1 *")
     public void schedule(){
         System.out.println("""
                 Scheduled ! *_* 
