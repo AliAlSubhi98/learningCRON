@@ -13,8 +13,7 @@ public class ScheduleClass {
     public void schedule(){
         System.out.println("""
                 Write a CRON expression that:
-                 that runs a job every 15 minutes between 8:00 AM and 10:45 PM
-                 every day
+                  that runs a job every hour on weekdays between 9:00 AM and 5:00 PM.
                 """);
     }
 }
